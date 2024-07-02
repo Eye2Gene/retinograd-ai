@@ -3,7 +3,7 @@ Gradeability model for FAF images
 
 # PyTorch Classification Model Inference
 
-This repository contains code for running inference using a PyTorch-based classification model.
+This repository contains code for running inference of gradeability classification model.
 
 ## Setup
 
@@ -19,3 +19,7 @@ This repository contains code for running inference using a PyTorch-based classi
 3. Running Inference
     ```sh
     python inference.py --image_path path_to_image --csv_column column of csv of input image path --model_path path to model --output_csv_path path to output csv
+
+Predicted Labels:
+1. Class 0: Ungradable
+2. Class 1: Gradable
