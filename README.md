@@ -9,9 +9,9 @@ This repository contains code for running inference using a PyTorch-based classi
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/my-classification-model.git
-   cd my-classification-model
-
+   git clone https://github.com/Eye2Gene/retinograd-ai.git
+   cd retinograd-ai
+   
 2. Install the required packages
     ```sh
     pip install -r requirements.txt
