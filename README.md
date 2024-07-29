@@ -31,7 +31,7 @@ Arguments
 --output_csv_path (str): Path to save the output CSV file with predictions. Default is predictions.csv.
 
       ```bash
-   python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
+         python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
 
 The input csv should have a column of input image paths and that should given after input argument --csv_column.
 
