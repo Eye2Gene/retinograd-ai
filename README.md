@@ -18,7 +18,7 @@ This repository contains code for running inference of gradeability classificati
 
 3. Running Inference
     ```sh
-    python inference.py --image_path path_to_image --csv_column column of csv of input image path --model_path path to model --output_csv_path path to output csv
+    python inference.py --image_path path_to_image --csv_column column_of_csv_of_input_image_path --model_path path_to_model --output_csv_path path_to_output_csv
 
 Predicted Labels:
 1. Class 0: Ungradable
