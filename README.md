@@ -21,8 +21,8 @@ This repository contains code for running inference of gradeability classificati
     Go to the [Releases]([https://github.com/yourusername/image-classification/releases](https://github.com/Eye2Gene/retinograd-ai/releases/) page of this repository. Under the latest release, find the `FAF_inception_resenet_2Class_classification.pth` file listed under "Assets" and download it to the `weights` directory in your project.
 
 4. Running Inference
-    ```bash
-      python classify_images.py --csv_path <input_csv> --csv_column <image_path_column> --model_path <model_weights> --output_csv_path <output_csv>
+    ```sh
+    python classify_images.py --csv_path <input_csv> --csv_column <image_path_column> --model_path <model_weights> --output_csv_path <output_csv>
 
 Arguments
 --csv_path (str): Path to the input CSV file containing image paths.
