@@ -42,13 +42,15 @@ This repository contains a Python script for performing image classification usi
     python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
     ```
 
-## Arguments
+### Inference Arguments
 - `--csv_path` (str): Path to the input CSV file containing image paths.
 - `--csv_column` (str): Column name in the CSV file that contains the image paths. Default is `image_path`.
 - `--model_path` (str): Path to the model weights file. Model weight file has been added in releases.
 - `--output_csv_path` (str): Path to save the output CSV file with predictions. Default is `predictions.csv`.
 
 The input CSV requires at least one column containing all the paths to the input images. The name of this column should be passed using `--csv_column <col_name>`.
+
+### Inference Outputs
 
 Retinograd-ai currently predicted two labels for each image:
 
