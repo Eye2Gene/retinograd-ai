@@ -30,15 +30,15 @@ Arguments
 --model_path (str): Path to the model weights file. Model weight file has been added in releases.
 --output_csv_path (str): Path to save the output CSV file with predictions. Default is predictions.csv.
 
-      ```bash
-         python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
-
 The input csv should have a column of input image paths and that should given after input argument --csv_column.
-
 
 Predicted Labels:
 1. Class 0: Ungradable
 2. Class 1: Gradable
+
+#Example
+   ```sh
+   python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
 
 ##License
 
