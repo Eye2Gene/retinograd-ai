@@ -25,11 +25,11 @@ This repository contains code for running inference of gradeability classificati
     ```sh
     python classify_images.py --csv_path <input_csv> --csv_column <image_path_column> --model_path <model_weights> --output_csv_path <output_csv>
 
-Arguments
---csv_path (str): Path to the input CSV file containing image paths.
---csv_column (str): Column name in the CSV file that contains the image paths. Default is image_path.
---model_path (str): Path to the model weights file. Model weight file has been added in releases.
---output_csv_path (str): Path to save the output CSV file with predictions. Default is predictions.csv.
+## Arguments
+- `--csv_path` (str): Path to the input CSV file containing image paths.
+- `--csv_column` (str): Column name in the CSV file that contains the image paths. Default is `image_path`.
+- `--model_path` (str): Path to the model weights file. Model weight file has been added in releases.
+- `--output_csv_path` (str): Path to save the output CSV file with predictions. Default is `predictions.csv`.
 
 The input csv should have a column of input image paths and that should given after input argument --csv_column.
 
