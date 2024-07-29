@@ -36,8 +36,9 @@ Predicted Labels:
 1. Class 0: Ungradable
 2. Class 1: Gradable
 
-#Example
+
    ```sh
+   #Example
    python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
 
 ##License
