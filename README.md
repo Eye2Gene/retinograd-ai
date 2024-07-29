@@ -16,10 +16,34 @@ This repository contains code for running inference of gradeability classificati
     ```sh
     pip install -r requirements.txt
 
-3. Running Inference
-    ```sh
-    python inference.py --image_path path_to_image --csv_column column_of_csv_of_input_image_path --model_path path_to_model --output_csv_path path_to_output_csv
+3. Download model weights
+
+    Go to the [Releases]([https://github.com/yourusername/image-classification/releases](https://github.com/Eye2Gene/retinograd-ai/releases/) page of this repository. Under the latest release, find the `FAF_inception_resenet_2Class_classification.pth` file listed under "Assets" and download it to the `weights` directory in your project.
+
+4. Running Inference
+    ```bash
+      python classify_images.py --csv_path <input_csv> --csv_column <image_path_column> --model_path <model_weights> --output_csv_path <output_csv>
+
+Arguments
+--csv_path (str): Path to the input CSV file containing image paths.
+--csv_column (str): Column name in the CSV file that contains the image paths. Default is image_path.
+--model_path (str): Path to the model weights file. Model weight file has been added in releases.
+--output_csv_path (str): Path to save the output CSV file with predictions. Default is predictions.csv.
+
+    ```bash
+    python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
+
+The input csv should have a column of input image paths and that should given after input argument --csv_column.
+
 
 Predicted Labels:
 1. Class 0: Ungradable
 2. Class 1: Gradable
+
+##License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+##Cite
+
+To be added soon...
