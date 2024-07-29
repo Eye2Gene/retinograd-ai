@@ -1,5 +1,6 @@
 # Retinograd ai
 Gradeability model for FAF images
+This repository contains a Python script for performing image classification using a pre-trained Inception ResNet v2 model specifically designed to assess the gradeability of Fundus Autofluorescence (FAF) images. The script reads image paths from a CSV file, processes each image, and outputs the gradeability predictions to a new CSV file. This tool is intended to assist researchers and clinicians in evaluating the quality and diagnostic utility of FAF images.
 
 # PyTorch Classification Model Inference
 
