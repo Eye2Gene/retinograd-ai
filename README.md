@@ -42,10 +42,10 @@ Predicted Labels:
    #Example
    python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
 
-##License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-##Cite
+## Cite
 
 To be added soon...
