@@ -34,13 +34,13 @@ This repository contains a Python script for performing image classification usi
    wget -O ./weights/model.pth https://github.com/Eye2Gene/retinograd-ai/releases/download/V0.0.1/FAF_inception_resenet_2Class_classification.pth
    ```
 4. Train or Finetune model:
-   # For training of model:
+   ###For training of model:
    If you want to train the model from scratch for your custom data, please run below command.
    ```bash
     python  train.py --mode train --train_csv <csv_path_of_train> --val_csv <csv_path_of_val> --image_path_csv_column <image_path_column> --label_csv_column <label_column> --model_path <path_to_save_model_weights> --num_epochs <number of epochs> --batch_size <number_of_images_per_batch> --learning_rate <learning_rate>
    ```
    
-    # For Finetuning of model:
+    ### For Finetuning of model:
    If you want to Finetune the model using our model weights for your custom data, please run below command. For this, the model weights shoule be downloaded first.
    ```
     python  train.py --mode finetune --train_csv <csv_path_of_train> --val_csv <csv_path_of_val> --image_path_csv_column <image_path_column> --label_csv_column <label_column> --model_path <path_to_save_model_weights> --num_epochs <number of epochs> --batch_size <number_of_images_per_batch> --learning_rate <learning_rate>v
