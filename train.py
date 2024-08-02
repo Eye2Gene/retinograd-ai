@@ -26,8 +26,6 @@ class CustomDataset(Dataset):
         image = Image.open(img_name).convert('RGB')
         label = int(self.data_frame.loc[idx, self.label_column])
         
-        label=1 if label>0 else 0
-
         if self.transform:
             image = self.transform(image)
 
