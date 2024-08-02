@@ -72,7 +72,7 @@ def train_model(mode,train_csv, val_csv,image_path_column,label_column, model_pa
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
     best_model_wts = model.state_dict()
-    best_acc = 0.0
+    best_loss = np.inf
 
     for epoch in tqdm(range(num_epochs), desc="Epochs"):
         print(f'Epoch {epoch}/{num_epochs - 1}')
@@ -119,8 +119,8 @@ def train_model(mode,train_csv, val_csv,image_path_column,label_column, model_pa
             print(f'{phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
 
             # Deep copy the model
-            if phase == 'val' and epoch_acc > best_acc:
-                best_acc = epoch_acc
+            if phase == 'val' and epoch_loss < best_loss:
+                best_loss = epoch_loss
                 best_model_wts = model.state_dict()
 
     print(f'Best val Acc: {best_acc:4f}')
