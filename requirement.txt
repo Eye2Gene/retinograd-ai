@@ -3,3 +3,6 @@ torchvision
 timm
 tqdm
 Pillow
+scikit-learn
+numpy
+pandas
