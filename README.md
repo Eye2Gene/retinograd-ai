@@ -55,7 +55,7 @@ This repository contains a Python script for performing image classification usi
     python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
     ```
 
-### Inference Arguments
+### Train/Finetune/Inference Arguments
 - `--csv_path` (str): Path to the input CSV file containing image paths.
 - `--csv_column` (str): Column name in the CSV file that contains the image paths. Default is `image_path`.
 - `--model_path` (str): Path to the model weights file. Model weight file has been added in releases.
