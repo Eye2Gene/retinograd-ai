@@ -9,7 +9,7 @@ This repository contains a Python script for performing image classification usi
 > If you use Retinograd in your work, please cite us as follows:
 >
 > Retinograd-AI: An Open-source Automated Gradeability Assessment for Retinal Scans for Inherited Eye Dystrophies <br>
-> URL: [https://doi.org/10.1101/2024.08.07.24311607](https://doi.org/10.1101/2024.08.07.24311607) <br
+> URL: [https://doi.org/10.1101/2024.08.07.24311607](https://doi.org/10.1101/2024.08.07.24311607) <br>
 > <sub><sup>William Woof*, Gunjan Naik*, Saoud Al-Khuzaei*, Thales Antonio Cabral De Guimaraes, Malena Daich Varela, Sagnik Sen, Pallavi Bagga, Ismail Moghul, Michel Michaelides, Konstantinos Balaskas, Nikolas Pontikos</sub></sup>
 
 
