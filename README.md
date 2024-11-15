@@ -49,10 +49,10 @@ This repository contains a Python script for performing image classification usi
 
 6. Running Inference
     ```bash
-    python classify_images.py --csv_path <input_csv> --csv_column <image_path_column> --model_path <model_weights> --output_csv_path <output_csv>
+    python inference.py --csv_path <input_csv> --csv_column <image_path_column> --model_path <model_weights> --output_csv_path <output_csv>
 
     # For example:
-    python classify_images.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
+    python inference.py --csv_path data/images.csv --csv_column image_path --model_path weights/model.pth --output_csv_path data/predictions.csv
     ```
 
 ### Train/Finetune/Inference Arguments
