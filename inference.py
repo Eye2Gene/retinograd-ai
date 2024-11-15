@@ -21,7 +21,7 @@ def load_model(model_path):
         return None
 
 def predict(model, image_path):
-    preprocess = transform = transforms.Compose([
+    preprocess = transforms.Compose([
     transforms.Resize((768, 768)),
     transforms.ToTensor(),
 ])
