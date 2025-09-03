@@ -73,8 +73,8 @@ if __name__ == "__main__":
         print(f"Error: CSV file is corrupt - {args.csv_path}")
         exit(1)
 
-    if 'image_path' not in df.columns:
-        print("Error: CSV file does not contain 'image_path' column")
+    if args.csv_column not in df.columns:
+        print(f"Error: CSV file does not contain '{args.csv_column}' column")
         exit(1)
 
     predictions = []
